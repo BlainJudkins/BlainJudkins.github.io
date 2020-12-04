@@ -37,6 +37,74 @@
 <!-- END CSS LINKING -->
 
 
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style>
+    * {
+    box-sizing: border-box;
+    }
+
+    body {
+    font-family: Arial, Helvetica, sans-serif;
+    }
+
+    /* Style the header */
+    /* header {
+    background-color: #666;
+    padding: 30px;
+    text-align: center;
+    font-size: 35px;
+    color: white;
+    } */
+
+    /* Create two columns/boxes that floats next to each other */
+    /* nav {
+    float: left;
+    width: 30%;
+    height: 300px; /* only for demonstration, should be removed */
+    /* background: #ccc;
+    padding: 20px;
+    } */ 
+
+    /* Style the list inside the menu */
+    nav ul {
+    list-style-type: none;
+    padding: 0;
+    }
+
+    article {
+    float: left;
+    padding: 20px;
+    width: 70%;
+    background-color: #f1f1f1;
+    height: 300px; /* only for demonstration, should be removed */
+    }
+
+    /* Clear floats after the columns */
+    section:after {
+    content: "";
+    display: table;
+    clear: both;
+    }
+
+    /* Style the footer */
+    /* footer {
+    background-color: #777;
+    padding: 10px;
+    text-align: center;
+    color: white;
+    } */
+
+    /* Responsive layout - makes the two columns/boxes stack on top of each other instead of next to each other, on small screens */
+    @media (max-width: 600px) {
+    nav, article {
+        width: 100%;
+        height: auto;
+    }
+    }
+    </style>
+
+
   </head>
   <body>
 <!-- START NAVBAR -->
@@ -91,139 +159,57 @@
 
 
 
-
-
-
-
-<!-- STAR FORM -->
-<div class="container">
-    <h1 class ="text-center">Suggest a New Feature</h1>
-    <!-- <form> -->
-    <div style="text-align:center">
-        <form action="https://formspree.io/f/mjvpeqkn" method="POST">
-
-            <p></p>
-            <p></p>
-
+    <header>
+        <h2>Cities</h2>
+      </header>
+      
+      <section>
+        <nav>
+          <ul>
+    <!-- STAR FORM -->
             <div class="container">
-                <label>
-                    Your email:
-                    <p></p>
-                    <input type="text" name="_replyto">
-                </label>
-                <p></p>
-                <label>
-                    Your Suggestion:
-                    <p></p>
-                    <textarea name="message"></textarea>
-                </label>
+                <h1 class ="text-center">Suggest a New Feature</h1>
+                <!-- <form> -->
+                <div style="text-align:center">
+                    <form action="https://formspree.io/f/mjvpeqkn" method="POST">
+
+                        <p></p>
+                        <p></p>
+
+                        <div class="container">
+                            <label>
+                                Your email:
+                                <p></p>
+                                <input type="text" name="_replyto">
+                            </label>
+                            <p></p>
+                            <label>
+                                Your Suggestion:
+                                <p></p>
+                                <textarea name="message"></textarea>
+                            </label>
+                        </div>
+                        &nbsp;
+                        <div class="container">
+                    <!-- Submit Button -->
+                            <a href="main.html">
+                                <button type="submit"  class="btn btn-primary">Submit</button>
+                            </a>
+                        </div>
+                        &nbsp;
+                        &nbsp;
+                    </form>
+                </div>
             </div>
+          </ul>
+        </nav>
+        
+        <article>
+          <!-- <h1>London</h1> -->
+          <p>SUGGESTION</p>
 
-
-
-
-
-
-
-
-            <!-- Interest Name -->
-            <!-- <div class="form-group">
-                <label for="exampleFormControlTextarea1">Suggestion Name</label>
-                <textarea class="form-control" id="exampleFormControlTextarea1" placeholder="Suggestion" rows="1"></textarea>
-            </div> -->
-        <!-- Text About Interest -->
-            <!-- <div class="form-group">
-                <label for="exampleFormControlTextarea1">Text About Suggestion</label>
-                <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
-            </div> -->
-
-
-            <!-- <div class="row">
-                <div class="col"> -->
-        <!-- Upload Local Image: -->
-                    <!-- <div class="form-group">
-                        <label for="exampleFormControlFile1">Example file input</label>
-                        <input type="file" class="form-control-file" id="exampleFormControlFile1">
-                    </div> -->
-                <!-- </div>
-                <div class="col"> -->
-        <!-- Select # Tweets to Display: -->
-                    <!-- <div class="form-group">
-                        <label for="exampleFormControlSelect1">EXAMPLE (CHANGE):</label>
-                        <select class="form-control" id="exampleFormControlSelect1">
-                        <option>1</option>
-                        <option>2</option>
-                        <option>3</option>
-                        <option>4</option>
-                        <option>5</option>
-                        </select>
-                    </div> -->
-                <!-- </div>
-            </div> -->
-
-        <!-- Scale -->
-            <!-- <p>On a scale of 1-5, how interested in this are you?</p>
-            <div class="form-check"></div>
-                <div class="row">
-                    <div class="col"> -->
-                    <!-- 1 -->
-                        <!-- <div class="form-check form-check-inline">
-                            <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio1" value="option1">
-                            <label class="form-check-label" for="inlineRadio1">1</label>
-                        </div> -->
-                    <!-- 2 -->
-                        <!-- <div class="form-check form-check-inline">
-                            <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio2" value="option2">
-                            <label class="form-check-label" for="inlineRadio2">2</label>
-                        </div> -->
-                    <!-- 3 -->
-                        <!-- <div class="form-check form-check-inline">
-                            <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio3" value="option3">
-                            <label class="form-check-label" for="inlineRadio3">3</label> -->
-                        <!-- </div> -->
-                    <!-- 4 -->
-                        <!-- <div class="form-check form-check-inline">
-                            <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio4" value="option4">
-                            <label class="form-check-label" for="inlineRadio4">4</label>
-                        </div> -->
-                    <!-- 5 -->
-                        <!-- <div class="form-check form-check-inline">
-                            <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio5" value="option5">
-                            <label class="form-check-label" for="inlineRadio5">5</label>
-                        </div>
-                    </div>
-                </div> -->
-            <!-- </div> -->
-            &nbsp;
-            <div class="container">
-        <!-- Login -->
-                <!-- <label>Login to Finish Submitting</label>
-                <div class="row">
-                    <div class="col">
-                Username 
-                        <div class="input-group">
-                            <input type="text" class="form-control" id="validationCustomUsername" placeholder="Username" aria-describedby="inputGroupPrepend" required>
-                            <div class="invalid-feedback">
-                            Please choose a username.
-                            </div>
-                        </div>
-                    </div>
-                Password
-                    <div class="col">
-                        <div class="form-group">
-                            <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password">
-                        </div>
-                    </div>
-                </div> -->
-            <!-- Submit Button -->
-                <a href="main.html">
-                    <button type="submit"  class="btn btn-primary">Submit</button>
-                </a>
-            </div>
-            &nbsp;
-            &nbsp;
-
-        </form>
+        </article>
+      </section>
     </div>
 </div>
 <!-- END FORM -->
