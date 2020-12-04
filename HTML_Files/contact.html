@@ -35,50 +35,6 @@
 <!-- STAR CSS LINKING -->
 	<!-- <link rel="stylesheet" type="text/css" href="../CSS_Files/main.css" /> -->
 <!-- END CSS LINKING -->
-
-
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <style>
-    * {
-    box-sizing: border-box;
-    }
-
-    body {
-    font-family: Arial, Helvetica, sans-serif;
-    }
-
-    /* Style the list inside the menu */
-    nav ul {
-    list-style-type: none;
-    padding: 0;
-    }
-
-    article {
-    float: left;
-    padding: 20px;
-    width: 70%;
-    background-color: #f1f1f1;
-    height: 300px; /* only for demonstration, should be removed */
-    }
-
-    /* Clear floats after the columns */
-    section:after {
-    content: "";
-    display: table;
-    clear: both;
-    }
-
-    /* Responsive layout - makes the two columns/boxes stack on top of each other instead of next to each other, on small screens */
-    @media (max-width: 600px) {
-    nav, article {
-        width: 100%;
-        height: auto;
-    }
-    }
-    </style>
-
-
   </head>
   <body>
 <!-- START NAVBAR -->
@@ -129,14 +85,12 @@
 
     <!-- <h1>My First Heading</h1> -->
     <!-- <p>My first paragraph.</p> -->   
-      <section>
-        <nav>
-          <ul>
-    <!-- STAR FORM -->
+
+    <!-- START FORM -->
             <div class="container">
                 <h1 class ="text-center">Suggest a New Feature</h1>
                 <!-- <form> -->
-                <!-- <div style="text-align:center"> -->
+                <div style="text-align:center">
                     <form action="https://formspree.io/f/mjvpeqkn" method="POST">
 
                         <p></p>
@@ -146,7 +100,7 @@
                             <label>
                                 Your email:
                                 <p></p>
-                                <input type="text" name="_replyto">
+                                <input type="text" size="50" name="_replyto">
                             </label>
                             <p></p>
                             <label>
@@ -165,23 +119,9 @@
                         &nbsp;
                         &nbsp;
                     </form>
-                <!-- </div> -->
+                </div>
             </div>
-          </ul>
-        </nav>
-        
-        <article>
-          <!-- <h1>London</h1> -->
-          <p>SUGGESTION jbkfewbkfabkafwbkjafwbkjafwbkjfaw</p>
-
-        </article>
-      </section>
-    </div>
-</div>
-<!-- END FORM -->
-
-
-
+    <!-- END FORM -->
 
 
         <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script> -->
